@@ -1,0 +1,34 @@
+Jilian-TODO
+--------------------------------------------------------------------------------
+
+Frontend
+	- Erstellen von mehreren Kategorien
+	- Unterkategorien innerhalb von Kategorien möglich, also Verschachtelung
+	- erstellen von Threads bzw. Topics innerhalb einer Kategorie
+	- beantworten von Threads bzw. Topics (nur für registrierte Nutzer? Freie Festlegung im Admin Panel)
+	- Templatesystem
+	- Benutzerprofile
+	- private Nachrichten
+	
+Moderations-Funktionen
+	 - Löschen von einzelnen Antworten/Beiträgen/Posts
+	 - Löschen, Verschieben, Umbenennen von ganzen Threads
+	 - Verwarnen von Benutzern (?) Kommentar-Funktion für Moderatoren fände ich besser
+	 
+	  
+Admin-Panel
+	 - automatisches Update/Upgrade der Forensoftware (?) schwierig ist
+	 - Bannen/Unbannen von Usern
+	 - Festlegen von Design/Farben/Logo etc. maybe themes/skins? Okay, Import/Export von themes
+	   Themes in Form von CSS-Dateien? Bei guter XHTML-Struktur sicher möglich. :)
+	 - Action-Log
+	 - ofe
+
+Name
+	-
+
+surf2me
+	- Kaffee geben
+	- Schule absagen
+
+content.sql nach content.mysql umbenennen

@@ -1,0 +1,45 @@
+When editing the sources of Jilian or writing additionaly classes, modules or
+patches we would recommend you to accord to some coding-conventions we have:
+
+ - have a look at the comments, we didn't wrote them for fun :)
+ - Please use the GNU-Styling to format the code
+ - Write comments in english or german
+
+A "Module" is just a File with a class (you have to make an entry into you DB
+then). You >have< to give it a function named "Run", which will be executed
+in runtime. An example module will be added later to this project. Just write
+it here :)
+
+Please write in a PHP5-compatible coding-style, use visibility keywords and so
+on, this will make code much more easier to read and understand.
+
+
+<?php
+
+class MyModule
+{
+	// add your custom variables here
+	
+	
+	function __costruct()
+	{
+		// You should know, what to do here...
+	}
+	
+	
+	function __destruct()
+	{
+		// You should know, what to do here...
+	}
+	
+	
+	function Run()
+	{
+		// this stuff will be executed when calling the module
+		phpinfo();
+	}
+	
+	// add custom functions here
+}
+
+?>
