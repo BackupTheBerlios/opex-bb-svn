@@ -9,23 +9,19 @@ Frontend
 	- Templatesystem
 	- Benutzerprofile
 	- private Nachrichten
-	
+
 Moderations-Funktionen
 	 - Löschen von einzelnen Antworten/Beiträgen/Posts
 	 - Löschen, Verschieben, Umbenennen von ganzen Threads
 	 - Verwarnen von Benutzern (?) Kommentar-Funktion für Moderatoren fände ich besser
-	 
-	  
+
+
 Admin-Panel
 	 - automatisches Update/Upgrade der Forensoftware (?) schwierig ist
 	 - Bannen/Unbannen von Usern
 	 - Festlegen von Design/Farben/Logo etc. maybe themes/skins? Okay, Import/Export von themes
 	   Themes in Form von CSS-Dateien? Bei guter XHTML-Struktur sicher möglich. :)
 	 - Action-Log
-	 - ofe
-
-Name
-	-
 
 surf2me
 	- Kaffee geben
