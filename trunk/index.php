@@ -1,8 +1,24 @@
 <?php
 /*
-	am 20.Mai 2008 erstellt
-	surf2me
-*/
+ *      index.php
+ *      Last Change: 2008-06-07
+ *
+ *      (C) Copyright 2008 by the OpeX BB Development Team
+ *
+ *      This program is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *
+ *      This program is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *
+ *      You should have received a copy of the GNU General Public License
+ *      along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 
 include("inc/db.class.php");
 
@@ -82,7 +98,7 @@ class Template
 				break;
 		}
 	}
-	
+
 	function __get($var)
 	{
 		switch($var)
@@ -114,7 +130,7 @@ class Template
 			$this->$value["name"] =
 				(isset($this->$value["name"]) ? $this->$value["name"] : "").
 				utf8_decode($value["content"]); // <<-- das mit dem Decode muss anders gelöst werden; Christian macht das!
-		
+
 		/* Laden eines "Moduls" */
 		$modules = $this->database->select(
 			Array("name", "file", "class"),
@@ -157,18 +173,3 @@ $template->database = new database("mysql", "localhost", "root", "passwort", "ro
 $template->setContentFromDatabase($id);
 $template->Load("testTemplate.php"); /* Danke */
 ?>
-/*
-Wer macht sowas hier auch auf Windows? ... ich, weil hier kein linux funktioniert
-Warning: mysql_connect() [function.mysql-connect]: Unknown MySQL server host 'host' (11004) in C:\xampp\htdocs\forum\inc\db.class.php on line 55
-
-Warning: mysql_select_db(): supplied argument is not a valid MySQL-Link resource in C:\xampp\htdocs\forum\inc\db.class.php on line 57
-
-Warning: mysql_real_escape_string() [function.mysql-real-escape-string]: Access denied for user 'ODBC'@'localhost' (using password: NO) in C:\xampp\htdocs\forum\inc\db.class.php on line 221
-
-Warning: mysql_real_escape_string() [function.mysql-real-escape-string]: A link to the server could not be established in C:\xampp\htdocs\forum\inc\db.class.php on line 221
-
-Warning: mysql_query(): supplied argument is not a valid MySQL-Link resource in C:\xampp\htdocs\forum\inc\db.class.php on line 114
-
-Warning: mysql_error(): supplied argument is not a valid MySQL-Link resource in C:\xampp\htdocs\forum\inc\db.class.php on line 115
-- SELECT name,content FROM content WHERE id=''
-*/
